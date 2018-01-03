@@ -418,7 +418,6 @@ margin-top: -0.1%;
 
 
 section {
-  width: 100%;
   display: flex;
 
 .image {
@@ -534,14 +533,16 @@ footer {
               &.fa-facebook-square {
                 width: 20px;
                 height: auto;
-                font-size: 50px;
+                font-size: 60px;
     }
   }
 }
 
           section {
             color: white;
-            margin-top: 2%;
+            margin-top: 12%;
+            margin-left: 16.5%;
+            display: block;
 
 
             li {
@@ -568,8 +569,8 @@ h5 {
 }
 
 form {
-    margin-top: -26%;
-    margin-left: -5%;
+    margin-top: -29%;
+    margin-left: -10%;
 
             .søgefelt1 {
               width: 750px;

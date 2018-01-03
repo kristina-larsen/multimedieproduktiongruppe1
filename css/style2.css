@@ -362,7 +362,6 @@ footer p {
   }
 
   section {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -469,11 +468,13 @@ footer p {
   footer a i.fa-facebook-square {
     width: 20px;
     height: auto;
-    font-size: 50px;
+    font-size: 60px;
   }
   footer section {
     color: white;
-    margin-top: 2%;
+    margin-top: 12%;
+    margin-left: 16.5%;
+    display: block;
   }
   footer section li {
     font-size: 20px;
@@ -496,8 +497,8 @@ footer p {
     margin-top: 1%;
   }
   footer section form {
-    margin-top: -26%;
-    margin-left: -5%;
+    margin-top: -29%;
+    margin-left: -10%;
   }
   footer section form .søgefelt1 {
     width: 750px;

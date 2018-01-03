@@ -16,6 +16,7 @@ img {
 header {
   position: fixed;
   width: 100%;
+  margin-top: -9.5%;
 }
 header body img {
   height: auto;
@@ -36,7 +37,7 @@ header label {
   font-size: 20px;
   color: gray;
   margin-left: 88%;
-  margin-top: -19%;
+  margin-top: -15%;
 }
 header input {
   display: none;
