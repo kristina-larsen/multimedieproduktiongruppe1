@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/fc7d4b5e8b.js"></script>
+      <link rel="stylesheet" href="css/style2.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+
+    <title>Forside</title>
+  </head>
+
+
+  <body>
+
+
+    <header>
+      <!-- Burger menu -->
+      				<label for="burger"><i class="fa fa-bars" aria-hidden="true"></i></label>
+      				<input type="checkbox" id="burger">
+			<!-- Burger menu slut -->
+
+      <!--Navigationbar i burger menu på iphone/ipad-->
+<nav>
+  <a href="index.html">Forside</a>
+    <a href="produktlan.html">Produktlancering</a>
+      <a href="produktportfolio.html">Produktportfolio</a>
+        <a href="om.html">Om os</a>
+          <a href="atelier.html">Atelier 1B</a>
+            <a href="nacl.html">NaCl showcooking</a>
+</nav>
+
+<!--Nav slut-->
+
+<!--Navigationbar på desktop-->
+
+<ul class="navdesktop">
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+  <div class="fp"><li><a href="produktlan.html">Produktlancering</a></li>
+     <li><a href="index.html">Forside</a></li></div>
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Om os</a>
+      <div class="dropdown-content">
+        <a href="om.html">Om os</a>
+        <a href="atelier.html">Atelier 1B</a>
+        <a href="nacl.html">NaCl showcooking</a>
+      </div>
+    </li>
+      <li><a href="produktportfolio.html">Produktportfolio</a></li>
+  </ul>
+<!--navigationsbaren slut-->
+
+    </header>
+
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="img/slideshow1pr.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/slideshow2p2.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/slideshow3p3.PNG" style="width:100%">
+      </div>
+
+<!-- The dots/circles -->
+  <div id="dots" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<img class="frontpagebig" src="img/frontpage4.png" alt="mad5">
+
+<div>
+<h1> "Gastronomisk Innovation specialiserer sig i at lancere og skabe nye produkter. Vi benytter os udelukkende af lækre råvarer, heraf innovative råvarer.
+<br> Vi har en passion for, at sætte et præg på madverdenen og skabe nye ting."</h1>
+</div>
+
+<section>
+<div class="image">
+  <img class= "frontpageimage1" src="img/ravarer2.png" alt="mad5">
+  <h2>Hos Gastronomisk Innovation værdsætter vi lækre råvarer - derfor benytter vi os udelukkende af de lækreste råvarer vi kan finde.</h2>
+</div>
+
+<div class="image2">
+  <img class="frontpageimage2" src="img/vin5.jpg" alt="mad5">
+  <h2>Vi mener, at til lækkert mad er vinen en vigtig smagsoplevelse - derfor sætter vi en ære i, kun at matche den bedste vin til maden.</h2>
+</div>
+
+<div class="image3">
+  <img class="frontpageimage3" src="img/anderledes1.png" alt="mad5">
+  <h2>Vi er eksperimenterende med valget af råvarer og er ikke bange for at benytte os af anderledes råvarer.</h2>
+</div>
+</section>
+
+<img class="picturefrontdown" src="img/frontpage2.PNG" alt="mad4">
+
+
+  </body>
+
+  <footer>
+
+    <a href="https://www.facebook.com/Gastronomisk-Innovation-281933641918247/"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a>
+
+  <section>
+    <li>Atelier 1B</li>
+    <li>Frederiksborggade 1B 4.TH.</li>
+    <li>1360 København K</li>
+    <li>+45 3110 6953</li>
+
+  <form action="takfordinmail.html" method="post">
+
+  <h5> Navn </h5>
+  <ul><input class="søgefelt1"type="text" name="artikelID" placeholder="Navn"></ul>
+  <h6> E-mail </h6>
+  <ul><input class="søgefelt1"type="search" name="" value="" placeholder="E-mail"></ul>
+  <h6> Emne </h6>
+  <ul><input class="søgefelt1"type="search" name="" value="" placeholder="Emne" ></ul>
+  <h6> Besked </h6>
+  <ul><input class="søgefelt1"type="search" name="" value="" placeholder="Besked"></ul>
+  <ul><input class="button" type="submit" name="" value="Send"></ul>
+  </form>
+
+</section>
+  <p> © Gastronomisk Innovation 2018 </p>
+
+  </footer>
+
+</html>

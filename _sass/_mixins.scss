@@ -1,0 +1,11 @@
+@mixin icon($color) {
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  text-align: center;
+  line-height:50px;
+  background-color: $color;
+  color:#fff;
+  font-size:20px;
+}

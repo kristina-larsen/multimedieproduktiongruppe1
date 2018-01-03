@@ -1,0 +1,512 @@
+@charset "UTF-8";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/*#FFFFFF;*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*iphone/ipad*/
+header {
+  position: fixed;
+  width: 100%;
+}
+header body img {
+  height: auto;
+  width: 100%;
+}
+header .navdesktop {
+  display: none;
+}
+header label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  color: gray;
+  margin-left: 88%;
+}
+header input {
+  display: none;
+}
+header input:checked + nav {
+  left: 0px;
+}
+header nav {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  left: -500px;
+  top: 0;
+  color: #fff;
+  background-color: rgba(192, 192, 192, 0.3);
+  height: 460px;
+}
+header nav a {
+  font-family: times;
+  float: none;
+  height: 45px;
+  color: black;
+  border-bottom: 1px solid white;
+  display: block;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  -webkit-transition-duration: .10s;
+          transition-duration: .10s;
+}
+header nav a:hover {
+  background-color: white;
+  color: grey;
+  margin-top: 25px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  z-index: -5%;
+}
+
+.mySlides {
+  display: none;
+}
+
+#dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+h1 {
+  background-image: url("../img/background9.png");
+  padding: 20px 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  vertical-align: middle;
+  font-weight: lighter;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-top: -1%;
+}
+
+.picturefrontdown {
+  width: 100%;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  margin-top: -1%;
+  background-color: grey;
+  background-image: url("../img/background2.png");
+  background-attachment: fixed;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer a {
+  float: right;
+  margin-right: 8%;
+}
+footer a i {
+  margin-top: 30%;
+}
+footer a i.fa-facebook-square {
+  height: auto;
+  font-size: 40px;
+  color: white;
+  margin-top: 125%;
+}
+footer section {
+  float: left;
+  margin-left: 49%;
+  margin-top: -12%;
+}
+footer section li {
+  font-size: 12px;
+  list-style: none;
+  margin-left: -120%;
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+}
+footer p {
+  font-size: 10px;
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  margin-top: 8%;
+  margin-right: 32%;
+  float: right;
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .image, .image2, .image3 {
+    display: none;
+  }
+
+  form {
+    display: none;
+  }
+
+  .frontpagebig {
+    display: none;
+  }
+
+  .frontpageimages {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dot {
+    margin-bottom: -45%;
+  }
+
+  h1 {
+    font-size: 25px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  footer {
+    height: 200px;
+  }
+  footer a i {
+    margin-right: -6%;
+  }
+  footer a i.fa-facebook-square {
+    font-size: 70px;
+  }
+  footer section {
+    float: left;
+    margin-left: 40%;
+    margin-top: 7%;
+  }
+  footer section li {
+    font-size: 20px;
+    list-style: none;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  footer p {
+    font-size: 18px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-right: 32%;
+    float: right;
+    color: black;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header nav {
+    display: none;
+  }
+  header .navdesktop {
+    display: block;
+  }
+  header input, header label {
+    display: none;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(240, 240, 240, 0.8);
+    width: 100%;
+    height: 70px;
+    display: block;
+  }
+  header ul img {
+    width: 10%;
+    height: auto;
+    margin-left: 6.5%;
+  }
+  header ul .fp {
+    float: left;
+    margin-left: 75px;
+  }
+  header ul li {
+    float: right;
+    display: block;
+    margin-right: 75px;
+  }
+  header ul li a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+  }
+  header ul li a, header ul li .dropbtn {
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    /*Når man rører tekst i menubar*/
+  }
+  header ul li a:hover, header ul li a .dropdown:hover .dropbtn, header ul li .dropbtn:hover, header ul li .dropbtn .dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  header ul li.dropdown {
+    display: inline-block;
+  }
+  header ul li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 0.5%;
+    z-index: 1;
+  }
+  header ul li.dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  header ul li.dropdown .dropdown-content a:hover, header ul li.dropdown .dropdown-content a .dropdown-content {
+    background-color: #f1f1f1;
+  }
+  header ul .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .picturefrontdown {
+    display: none;
+  }
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .frontpagebig {
+    width: 100%;
+    margin-bottom: -2%;
+    margin-top: -0.1%;
+  }
+
+  h1 {
+    font-size: 21px;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    font-family: 'Dosis', sans-serif;
+    background-color: #F1F2FF;
+    font-style: normal;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section .image {
+    position: relative;
+    display: block;
+    padding-bottom: 3%;
+    width: 33.3%;
+  }
+  section .image .frontpageimage1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    z-index: -20%;
+  }
+  section .image h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 70px 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    vertical-align: middle;
+    font-weight: lighter;
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    margin-top: -103%;
+  }
+  section .image2 {
+    position: relative;
+    display: block;
+    padding-bottom: 3%;
+    width: 33.3%;
+  }
+  section .image2 .frontpageimage2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    z-index: -20%;
+  }
+  section .image2 h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 70px 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    vertical-align: middle;
+    font-weight: lighter;
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    margin-top: -103%;
+  }
+  section .image3 {
+    position: relative;
+    display: block;
+    padding-bottom: 3%;
+    width: 33.3%;
+  }
+  section .image3 .frontpageimage3 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    z-index: -20%;
+  }
+  section .image3 h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 70px 45px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    vertical-align: middle;
+    font-weight: lighter;
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    margin-top: -103%;
+  }
+
+  .box {
+    background-color: #F1F2FF;
+    margin-top: -3%;
+    margin-bottom: -1%;
+    width: 100%;
+    height: 80px;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../img/hihi.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 325px;
+    width: 100%;
+    margin-top: -4.2%;
+  }
+  footer a {
+    float: left;
+    margin-left: 14.5%;
+    margin-top: 4.5%;
+    margin-bottom: -1%;
+  }
+  footer a i.fa-facebook-square {
+    width: 20px;
+    height: auto;
+    font-size: 50px;
+  }
+  footer section {
+    color: white;
+    margin-top: 2%;
+  }
+  footer section li {
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    text-align: center;
+    padding-right: 100px;
+    margin-right: 400px;
+  }
+  footer section h5 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+  footer section h6 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-top: 1%;
+  }
+  footer section form {
+    margin-top: -26%;
+    margin-left: -5%;
+  }
+  footer section form .søgefelt1 {
+    width: 750px;
+    height: 25px;
+  }
+  footer p {
+    margin-right: 43%;
+    margin-top: 3%;
+    font-size: 15px;
+    color: white;
+  }
+}

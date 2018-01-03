@@ -1,0 +1,410 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/*#FFFFFF;*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*iphone/ipad*/
+header {
+  position: fixed;
+  width: 100%;
+}
+header body img {
+  height: auto;
+  width: 100%;
+}
+header .navdesktop {
+  display: none;
+}
+header label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  color: gray;
+  margin-left: 88%;
+  margin-top: -19%;
+}
+header input {
+  display: none;
+}
+header input:checked + nav {
+  left: 0px;
+}
+header nav {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  left: -500px;
+  top: 0;
+  color: #fff;
+  background-color: rgba(192, 192, 192, 0.3);
+  height: 460px;
+}
+header nav a {
+  font-family: times;
+  float: none;
+  height: 45px;
+  color: black;
+  border-bottom: 1px solid white;
+  display: block;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  -webkit-transition-duration: .10s;
+          transition-duration: .10s;
+}
+header nav a:hover {
+  background-color: white;
+  color: grey;
+  margin-top: 25px;
+}
+
+body {
+  background-image: url("../img/background9.png");
+}
+
+article {
+  width: 100%;
+  clear: both;
+  padding-bottom: 1%;
+}
+article h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 14%;
+  margin-bottom: -13%;
+}
+article hr {
+  width: 14%;
+  margin-bottom: 8%;
+  border-color: #F1F2FF;
+  border-style: ridge;
+  border-width: 1px;
+  margin-left: 42%;
+}
+article p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 4%;
+  float: left;
+  text-align: left;
+}
+article .atelierbillede {
+  width: 300px;
+  height: auto;
+  margin-top: 3%;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 17%;
+  vertical-align: middle;
+  font-weight: lighter;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("../img/background2.png");
+  margin-top: -2%;
+}
+footer a {
+  float: right;
+  margin-right: 8%;
+}
+footer a i {
+  margin-top: 30%;
+}
+footer a i.fa-facebook-square {
+  height: auto;
+  font-size: 40px;
+  color: white;
+  margin-top: 125%;
+}
+footer section {
+  float: left;
+  margin-left: 49%;
+  margin-top: -12%;
+}
+footer section li {
+  font-size: 12px;
+  list-style: none;
+  margin-left: -120%;
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+}
+footer h4 {
+  font-size: 10px;
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  margin-top: 8%;
+  margin-right: 32%;
+  float: right;
+  color: black;
+}
+footer p {
+  font-size: 10px;
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  margin-top: 8%;
+  margin-right: 32%;
+  float: right;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  label {
+    margin-left: 20%;
+  }
+
+  article {
+    width: 100%;
+  }
+  article h2 {
+    font-size: 35px;
+  }
+  article p {
+    font-size: 25px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  article .atelierbillede {
+    height: 430px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .atelierbillede2 {
+    width: 100%;
+  }
+
+  .atelierbillede3 {
+    width: 100%;
+  }
+
+  footer {
+    height: 200px;
+  }
+  footer a i {
+    margin-right: -6%;
+  }
+  footer a i.fa-facebook-square {
+    font-size: 70px;
+  }
+  footer section {
+    float: left;
+    margin-left: 40%;
+    margin-top: 7%;
+  }
+  footer section li {
+    font-size: 20px;
+    list-style: none;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  footer p {
+    font-size: 18px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-right: 32%;
+    float: right;
+    color: black;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    position: fixed;
+    width: 100%;
+    margin-top: -14%;
+  }
+  header nav {
+    display: none;
+  }
+  header .navdesktop {
+    display: block;
+  }
+  header input, header label {
+    display: none;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(240, 240, 240, 0.8);
+    width: 100%;
+    height: 80px;
+    display: block;
+  }
+  header ul img {
+    width: 10%;
+    height: auto;
+    margin-left: 8.7%;
+  }
+  header ul .fp {
+    float: left;
+    margin-left: 75px;
+  }
+  header ul li {
+    float: right;
+    display: block;
+    margin-right: 80px;
+  }
+  header ul li a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+  }
+  header ul li a, header ul li .dropbtn {
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+  }
+  header ul li a:hover, header ul li a .dropdown:hover .dropbtn, header ul li .dropbtn:hover, header ul li .dropbtn .dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  header ul li.dropdown {
+    display: inline-block;
+  }
+  header ul li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 0.5%;
+    z-index: 1;
+  }
+  header ul li.dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  header ul li.dropdown .dropdown-content a:hover, header ul li.dropdown .dropdown-content a .dropdown-content {
+    background-color: #f1f1f1;
+  }
+  header ul .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  body {
+    background-image: url("../img/background9.png");
+  }
+
+  article {
+    width: 100%;
+  }
+  article h2 {
+    font-size: 23px;
+  }
+  article hr {
+    width: 75px;
+    margin-left: 47%;
+  }
+  article p {
+    font-size: 20px;
+    margin-top: -5%;
+    width: 37%;
+    line-height: 50px;
+    margin-left: 16%;
+  }
+  article .atelierbillede {
+    width: 30%;
+    height: 30%;
+    margin-top: -4%;
+    margin-right: 10%;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding-top: 3%;
+    margin-top: 17%;
+    padding-bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .atelierbillede2 {
+    height: auto;
+    width: 50%;
+    float: left;
+  }
+
+  .atelierbillede3 {
+    width: 50%;
+    height: auto;
+    float: right;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../img/hihi.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 325px;
+    width: 100%;
+    margin-top: 29.5%;
+  }
+  footer a {
+    float: right;
+    margin-left: 40%;
+    margin-top: 10%;
+    font-size: 50px;
+  }
+  footer a i.fa-facebook-square {
+    margin-top: 2%;
+  }
+  footer section {
+    color: white;
+    margin-top: -5.9%;
+  }
+  footer section li {
+    font-size: 23px;
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    text-align: left;
+    padding-right: 100px;
+    margin-right: 30px;
+  }
+  footer p {
+    margin-right: 43%;
+    margin-top: 4%;
+    font-size: 17px;
+    color: white;
+  }
+}
