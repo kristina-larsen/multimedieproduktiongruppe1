@@ -18,6 +18,13 @@ header {
   position: fixed;
   width: 100%;
 }
+header .logo {
+  width: 6%;
+  margin-left: 4%;
+  margin-top: 2%;
+  height: auto;
+  z-index: -2;
+}
 header body img {
   height: auto;
   width: 100%;
@@ -35,8 +42,11 @@ header label {
   background-color: transparent;
   color: #fff;
   font-size: 20px;
+  /*selve burger ikonet*/
+  float: right;
+  margin-right: -1.4%;
   color: gray;
-  margin-left: 88%;
+  /*farven på burger ikonet*/
 }
 header input {
   display: none;
@@ -78,6 +88,7 @@ header nav a:hover {
           box-sizing: border-box;
 }
 
+/* Start mobilversion forside */
 .slideshow-container {
   max-width: 1000px;
   margin: auto;
@@ -149,40 +160,89 @@ h1 {
   width: 100%;
 }
 
+/* Start mobilversion atelier 1B */
+body {
+  background-image: url("../img/background9.png");
+}
+
+article {
+  width: 100%;
+  clear: both;
+  padding-bottom: 1%;
+}
+article h2 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 19px;
+  text-align: center;
+  padding-top: 14%;
+  margin-bottom: -13%;
+}
+article hr {
+  width: 14%;
+  margin-bottom: 8%;
+  border-color: #F1F2FF;
+  border-style: ridge;
+  border-width: 1px;
+  margin-left: 42%;
+}
+article p {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: lighter;
+  line-height: 23px;
+  font-size: 14px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 4%;
+  float: left;
+  text-align: left;
+}
+article .atelierbillede {
+  width: 300px;
+  height: auto;
+  margin-top: 3%;
+  padding-bottom: 20%;
+}
+
+h3 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 35px 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  vertical-align: middle;
+  font-weight: lighter;
+  margin-top: -1.2%;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Start footer */
 footer {
   height: 150px;
   width: 100%;
-  margin-top: -1%;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.4);
   background-image: url("../img/background2.png");
-  background-attachment: fixed;
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: absolute;
+  margin-top: -1.2%;
 }
 footer a {
   float: right;
-  margin-right: 8%;
-}
-footer a i {
-  margin-top: 30%;
+  margin-top: 13%;
+  margin-right: 7%;
 }
 footer a i.fa-facebook-square {
   height: auto;
   font-size: 40px;
   color: white;
-  margin-top: 125%;
 }
 footer section {
   float: left;
-  margin-left: 49%;
-  margin-top: -12%;
+  margin-left: 7%;
+  margin-top: 10%;
 }
 footer section li {
   font-size: 12px;
   list-style: none;
-  margin-left: -120%;
   color: black;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -191,7 +251,7 @@ footer p {
   color: black;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
-  margin-top: 8%;
+  margin-top: 9%;
   margin-right: 32%;
   float: right;
   color: black;
@@ -221,6 +281,7 @@ footer p {
     margin-top: 30px;
   }
 
+  /* Start forside ipad */
   #dots {
     position: absolute;
     top: 128%;
@@ -266,12 +327,48 @@ footer p {
       opacity: 1;
     }
   }
-  h1 {
+  h3 {
     font-size: 25px;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    margin-top: -1%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: 'Cormorant Garamond', serif;
   }
 
+  /* Start atelier 1b */
+  article {
+    width: 100%;
+  }
+  article h2 {
+    font-size: 40px;
+  }
+  article p {
+    font-size: 30px;
+    line-height: 45px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  article .atelierbillede {
+    height: 600px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 25px;
+    padding: 40px 70px;
+  }
+
+  .atelierbillede2 {
+    width: 100%;
+  }
+
+  .atelierbillede3 {
+    width: 100%;
+  }
+
+  /* Start footer */
   footer {
     height: 280px;
   }
@@ -280,11 +377,10 @@ footer p {
   }
   footer a i.fa-facebook-square {
     font-size: 75px;
-    margin-top: 150%;
   }
   footer section {
     float: left;
-    margin-left: 45%;
+    margin-right: 2%;
     margin-top: 10%;
   }
   footer section li {
@@ -314,6 +410,9 @@ footer p {
   }
   header .navdesktop {
     display: block;
+  }
+  header .logo {
+    display: none;
   }
   header input, header label {
     display: none;
@@ -389,17 +488,18 @@ footer p {
     display: none;
   }
 
+  /* Start forside desktop */
   .frontpagebig {
     width: 100%;
     margin-bottom: -2%;
     margin-top: -0.1%;
   }
 
-  h1 {
+  h3 {
     font-size: 21px;
     padding-top: 8%;
     padding-bottom: 5%;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     background-color: #F1F2FF;
     font-style: normal;
   }
@@ -436,7 +536,7 @@ footer p {
     font-weight: lighter;
     font-family: 'Dosis', sans-serif;
     position: absolute;
-    margin-top: -103%;
+    margin-top: -50%;
   }
   section .image2 {
     position: relative;
@@ -461,7 +561,7 @@ footer p {
     font-weight: lighter;
     font-family: 'Dosis', sans-serif;
     position: absolute;
-    margin-top: -103%;
+    margin-top: -50%;
   }
   section .image3 {
     position: relative;
@@ -486,7 +586,7 @@ footer p {
     font-weight: lighter;
     font-family: 'Dosis', sans-serif;
     position: absolute;
-    margin-top: -103%;
+    margin-top: -50%;
   }
 
   .box {
@@ -497,7 +597,127 @@ footer p {
     height: 80px;
   }
 
-  footer {
+  /* Atelier 1b desktop */
+  body {
+    background-image: url("../img/background9.png");
+  }
+
+  article {
+    width: 100%;
+  }
+  article h2 {
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  article hr {
+    width: 75px;
+    margin-left: 47%;
+  }
+  article p {
+    font-size: 20px;
+    margin-top: -5%;
+    width: 37%;
+    line-height: 50px;
+    margin-left: 12%;
+    line-height: 40px;
+  }
+  article .atelierbillede {
+    width: 35%;
+    height: 35%;
+    margin-top: -4%;
+    margin-right: 8%;
+  }
+
+  h3 {
+    font-size: 25px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 1.5%;
+    font-family: 'Cormorant Garamond', serif;
+    background-image: url("../img/background2.png");
+    background-size: cover;
+  }
+
+  .atelierbillede2 {
+    height: auto;
+    width: 50%;
+    float: left;
+  }
+
+  .atelierbillede3 {
+    width: 50%;
+    height: auto;
+    float: right;
+  }
+
+  /* footer forside*/
+  .footerfrontpage {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../img/hihi.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 184%;
+    height: 325px;
+    width: 100%;
+    position: absolute;
+  }
+  .footerfrontpage a {
+    float: left;
+    margin-left: 12.5%;
+    margin-top: 4.5%;
+    margin-bottom: -1%;
+  }
+  .footerfrontpage a i.fa-facebook-square {
+    width: 20px;
+    height: auto;
+    font-size: 60px;
+  }
+  .footerfrontpage section {
+    color: white;
+    margin-left: 2%;
+    display: block;
+  }
+  .footerfrontpage section li {
+    font-size: 22px;
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    text-align: center;
+    margin-left: -130%;
+  }
+  .footerfrontpage section h5 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+  .footerfrontpage section h6 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-top: 1%;
+  }
+  .footerfrontpage section form {
+    margin-top: -25%;
+    margin-left: 16%;
+  }
+  .footerfrontpage section form .søgefelt1 {
+    width: 780px;
+    height: 25px;
+  }
+  .footerfrontpage p {
+    margin-right: 45%;
+    margin-top: 2.5%;
+    font-size: 16px;
+    color: white;
+  }
+
+  /*Footer atelier 1b*/
+  .footer {
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url("../img/hihi.jpeg");
     background-attachment: fixed;
@@ -507,57 +727,35 @@ footer p {
     right: 0;
     height: 325px;
     width: 100%;
-    margin-top: -4.2%;
+    margin-top: 29.5%;
+    position: inherit;
   }
-  footer a {
-    float: left;
-    margin-left: 14.5%;
-    margin-top: 4.5%;
-    margin-bottom: -1%;
+  .footer a {
+    float: right;
+    margin-left: 40%;
+    margin-top: 10%;
+    font-size: 50px;
   }
-  footer a i.fa-facebook-square {
-    width: 20px;
-    height: auto;
-    font-size: 60px;
+  .footer a i.fa-facebook-square {
+    margin-top: 2%;
   }
-  footer section {
+  .footer section {
     color: white;
-    margin-top: 12%;
-    margin-left: 16.5%;
-    display: block;
+    margin-top: -6.5%;
   }
-  footer section li {
-    font-size: 22px;
+  .footer section li {
+    font-size: 23px;
     list-style: none;
     font-family: 'Cormorant Garamond', serif;
     color: white;
-    text-align: center;
+    text-align: left;
     padding-right: 100px;
-    margin-right: 400px;
+    margin-right: 75px;
   }
-  footer section h5 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 15px;
-    color: white;
-  }
-  footer section h6 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 15px;
-    color: white;
-    margin-top: 1%;
-  }
-  footer section form {
-    margin-top: -30%;
-    margin-left: -10%;
-  }
-  footer section form .søgefelt1 {
-    width: 750px;
-    height: 25px;
-  }
-  footer p {
-    margin-right: 45%;
-    margin-top: 2.5%;
-    font-size: 16px;
+  .footer p {
+    margin-right: 43%;
+    margin-top: 4%;
+    font-size: 17px;
     color: white;
   }
 }
