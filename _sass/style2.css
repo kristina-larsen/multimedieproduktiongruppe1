@@ -46,13 +46,12 @@ header input:checked + nav {
 }
 header nav {
   width: 300px;
-  height: 100%;
   position: fixed;
   left: -500px;
   top: 0;
   color: #fff;
-  background-color: rgba(192, 192, 192, 0.3);
-  height: 460px;
+  background-color: rgba(192, 192, 192, 0.9);
+  height: 700px;
 }
 header nav a {
   font-family: times;
@@ -216,10 +215,57 @@ footer p {
   }
 }
 @media screen and (min-width: 768px) {
-  .dot {
-    margin-bottom: -45%;
+  .fa-bars {
+    font-size: 30px;
+    margin-left: 70%;
+    margin-top: 30px;
   }
 
+  #dots {
+    position: absolute;
+    top: 128%;
+    width: 100%;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   h1 {
     font-size: 25px;
     padding-top: 10%;
@@ -227,21 +273,22 @@ footer p {
   }
 
   footer {
-    height: 200px;
+    height: 280px;
   }
   footer a i {
     margin-right: -6%;
   }
   footer a i.fa-facebook-square {
-    font-size: 70px;
+    font-size: 75px;
+    margin-top: 150%;
   }
   footer section {
     float: left;
-    margin-left: 40%;
-    margin-top: 7%;
+    margin-left: 45%;
+    margin-top: 10%;
   }
   footer section li {
-    font-size: 20px;
+    font-size: 23px;
     list-style: none;
     color: black;
     font-family: 'Cormorant Garamond', serif;
@@ -251,8 +298,8 @@ footer p {
     color: black;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
-    margin-top: 2%;
-    margin-right: 32%;
+    margin-top: 6%;
+    margin-right: 35%;
     float: right;
     color: black;
   }
@@ -284,7 +331,7 @@ footer p {
   header ul img {
     width: 10%;
     height: auto;
-    margin-left: 6.5%;
+    margin-left: 10%;
   }
   header ul .fp {
     float: left;
@@ -362,7 +409,6 @@ footer p {
   }
 
   section {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -372,12 +418,13 @@ footer p {
     display: block;
     padding-bottom: 3%;
     width: 33.3%;
+    z-index: -2;
   }
   section .image .frontpageimage1 {
     width: 100%;
     height: auto;
     margin-bottom: 2%;
-    z-index: -20%;
+    z-index: -2;
   }
   section .image h2 {
     background-color: rgba(255, 255, 255, 0.5);
@@ -396,12 +443,13 @@ footer p {
     display: block;
     padding-bottom: 3%;
     width: 33.3%;
+    z-index: -2;
   }
   section .image2 .frontpageimage2 {
     width: 100%;
     height: auto;
     margin-bottom: 2%;
-    z-index: -20%;
+    z-index: -2;
   }
   section .image2 h2 {
     background-color: rgba(255, 255, 255, 0.5);
@@ -420,12 +468,13 @@ footer p {
     display: block;
     padding-bottom: 3%;
     width: 33.3%;
+    z-index: -2;
   }
   section .image3 .frontpageimage3 {
     width: 100%;
     height: auto;
     margin-bottom: 2%;
-    z-index: -20%;
+    z-index: -2;
   }
   section .image3 h2 {
     background-color: rgba(255, 255, 255, 0.5);
@@ -469,14 +518,16 @@ footer p {
   footer a i.fa-facebook-square {
     width: 20px;
     height: auto;
-    font-size: 50px;
+    font-size: 60px;
   }
   footer section {
     color: white;
-    margin-top: 2%;
+    margin-top: 12%;
+    margin-left: 16.5%;
+    display: block;
   }
   footer section li {
-    font-size: 20px;
+    font-size: 22px;
     list-style: none;
     font-family: 'Cormorant Garamond', serif;
     color: white;
@@ -496,17 +547,17 @@ footer p {
     margin-top: 1%;
   }
   footer section form {
-    margin-top: -26%;
-    margin-left: -5%;
+    margin-top: -30%;
+    margin-left: -10%;
   }
   footer section form .søgefelt1 {
     width: 750px;
     height: 25px;
   }
   footer p {
-    margin-right: 43%;
-    margin-top: 3%;
-    font-size: 15px;
+    margin-right: 45%;
+    margin-top: 2.5%;
+    font-size: 16px;
     color: white;
   }
 }

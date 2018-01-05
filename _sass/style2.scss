@@ -50,14 +50,12 @@ left:0px;
 
  nav{
  width:300px;
- height:100%;
  position:fixed;
  left:-500px;
  top:0;
  color: #fff;
- background-color: rgba(192,192,192,0.3);
-
- height: 460px;
+ background-color: rgba(192,192,192,0.9);
+ height: 700px;
 
  a{
    font-family: times;
@@ -230,8 +228,48 @@ p {
 
 @media screen and (min-width: 768px) {
 
+  .fa-bars {
+    font-size: 30px;
+    margin-left: 70%;
+    margin-top: 30px;
+}
+
+#dots{
+  position: absolute;
+  top: 128%;
+  width: 100%;
+}
+
 .dot {
-  margin-bottom: -45%;
+  cursor:pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 h1 {
@@ -241,7 +279,7 @@ h1 {
 }
 
 footer {
-  height: 200px;
+  height: 280px;
 
 a {
 
@@ -249,18 +287,19 @@ i {
   margin-right: -6%;
 
   &.fa-facebook-square {
-  font-size: 70px;
+  font-size: 75px;
+  margin-top: 150%;
 
 }
 }
 }
   section {
     float: left;
-    margin-left: 40%;
-    margin-top: 7%;
+    margin-left: 45%;
+    margin-top: 10%;
 
     li {
-     font-size: 20px;
+     font-size: 23px;
      list-style: none;
      color: black;
      font-family: 'Cormorant Garamond', serif;;
@@ -272,8 +311,8 @@ i {
     color: black;
     font-family: 'Cormorant Garamond', serif;;
     font-weight: bold;
-    margin-top: 2%;
-    margin-right: 32%;
+    margin-top: 6%;
+    margin-right: 35%;
     float: right;
     color: black;
    }
@@ -314,7 +353,7 @@ display: block;
 img {
   width: 10%;
   height: auto;
-  margin-left: 6.5%;
+  margin-left: 10%;
 }
 
 .fp {
@@ -425,12 +464,13 @@ position: relative;
 display: block;
 padding-bottom: 3%;
 width: 33.3%;
+z-index: -2;
 
     .frontpageimage1 {
       width: 100%;
       height: auto;
       margin-bottom: 2%;
-      z-index: -20%;
+      z-index: -2;
   }
 
           h2 {
@@ -452,12 +492,13 @@ width: 33.3%;
   display: block;
   padding-bottom: 3%;
   width: 33.3%;
+  z-index: -2;
 
          .frontpageimage2 {
            width: 100%;
            height: auto;
            margin-bottom: 2%;
-           z-index: -20%;
+           z-index: -2;
            }
 
                     h2 {
@@ -479,12 +520,13 @@ position: relative;
 display: block;
 padding-bottom: 3%;
 width: 33.3%;
+z-index: -2;
 
        .frontpageimage3 {
          width: 100%;
          height: auto;
          margin-bottom: 2%;
-         z-index: -20%;
+         z-index: -2;
          }
 
          h2 {
@@ -546,7 +588,7 @@ footer {
 
 
             li {
-              font-size: 20px;
+              font-size: 22px;
               list-style: none;
               font-family: 'Cormorant Garamond', serif;;
               color: white;
@@ -569,7 +611,7 @@ h5 {
 }
 
 form {
-    margin-top: -29%;
+    margin-top: -30%;
     margin-left: -10%;
 
             .søgefelt1 {
@@ -580,9 +622,9 @@ form {
   }
 
           p {
-            margin-right: 43%;
-            margin-top: 3%;
-            font-size: 15px;
+            margin-right: 45%;
+            margin-top: 2.5%;
+            font-size: 16px;
             color: white;
           }
         }
