@@ -114,7 +114,7 @@ body main .omos {
   font-size: 20px;
   padding-top: 50%;
   margin-left: 8%;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
 }
 body main .historien {
   font-size: 14px;
@@ -128,7 +128,7 @@ body main .rasmus {
   margin-left: 28%;
   margin-bottom: 8%;
   font-size: 20px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
 }
 body main .omras {
   font-size: 14px;
@@ -142,7 +142,7 @@ body main .morten {
   margin-left: 28%;
   margin-bottom: 8%;
   font-size: 20px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
 }
 body main .ommorten {
   font-size: 14px;
@@ -156,7 +156,7 @@ body main .gin {
   margin-left: 37%;
   margin-bottom: 8%;
   font-size: 20px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
 }
 body main .omgin {
   font-size: 14px;
@@ -205,9 +205,9 @@ body main .text {
 }
 body main h1 {
   margin-top: 5%;
-  margin-left: 30%;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
+  margin-left: 27%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
 }
 body main .p1 {
   margin-right: 10%;
@@ -257,8 +257,8 @@ body main .text2 {
   padding: 16px 32px;
 }
 body main .h2 {
-  margin-left: 35%;
-  font-family: 'Cormorant Garamond', serif;
+  margin-left: 33%;
+  font-family: 'Raleway', sans-serif;
 }
 body main .p2 {
   margin-top: 8%;
@@ -308,7 +308,8 @@ body main .text3 {
   padding: 16px 32px;
 }
 body main .h3 {
-  margin-left: 36%;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 35%;
 }
 body main .p3 {
   margin-top: 8%;
@@ -383,6 +384,7 @@ footer p {
     margin-top: 2%;
     color: gray;
     /*farven på burger ikonet*/
+    /*burger ikon*/
   }
   body header label .fa-bars {
     font-size: 30px;
@@ -403,7 +405,7 @@ footer p {
     left: 39%;
   }
   body main h1 {
-    margin-left: 41%;
+    margin-left: 40%;
   }
   body main .middle2 {
     top: 14%;
@@ -487,6 +489,7 @@ footer p {
   /*Alt det her er på desktop versionen, hvor min menubar vises. Den er færdiglavet*/
   body {
     /*Slut nav*/
+    /*OM OS*/
   }
   body header {
     position: fixed;
@@ -567,10 +570,9 @@ footer p {
     display: block;
   }
   body main {
-    /*omos*/
     /*Produktlancering*/
     /*brøndum*/
-    /*arla billede*/
+    /*arla*/
     /*Karolines*/
   }
   body main .pic1 {
@@ -581,13 +583,11 @@ footer p {
   }
   body main .omos {
     margin-left: 37%;
-    font-family: 'Cormorant Garamond', serif;
     padding-top: 40%;
   }
   body main .historien {
     margin-left: 14%;
     margin-right: 14%;
-    font-family: 'Cormorant Garamond', serif;
     margin-top: 5%;
     margin-bottom: 10%;
     line-height: 150%;
@@ -596,7 +596,6 @@ footer p {
     padding-top: 10%;
     margin-right: 18%;
     float: right;
-    font-family: 'Cormorant Garamond', serif;
   }
   body main .rasmuspic {
     width: 50%;
@@ -605,17 +604,15 @@ footer p {
   }
   body main .omras {
     float: right;
+    margin-top: -35%;
     margin-left: 58%;
     margin-right: 3%;
-    font-family: 'Cormorant Garamond', serif;
-    margin-top: -35%;
   }
   body main .morten {
     float: right;
     margin-right: 19%;
     margin-top: 20%;
     font-size: 20px;
-    font-family: 'Cormorant Garamond', serif;
   }
   body main .mortenpic {
     width: 50%;
@@ -627,13 +624,11 @@ footer p {
     margin-top: -37%;
     margin-left: 58%;
     margin-right: 3%;
-    font-family: 'Cormorant Garamond', serif;
   }
   body main .gin {
     float: right;
     margin-right: 20%;
     margin-top: 16%;
-    font-family: 'Cormorant Garamond', serif;
   }
   body main .ginpic {
     margin-top: -21%;
@@ -646,7 +641,6 @@ footer p {
     margin-top: -44%;
     margin-right: 5%;
     margin-left: 60%;
-    font-family: 'Cormorant Garamond', serif;
   }
   body main .container {
     width: 50%;
@@ -691,7 +685,6 @@ footer p {
     float: right;
     margin-right: 19%;
     margin-top: -30%;
-    font-family: 'Cormorant Garamond', serif;
   }
   body main .p1 {
     float: right;
@@ -699,7 +692,6 @@ footer p {
     margin-right: 5%;
     margin-left: 58%;
     margin-top: -25%;
-    font-family: 'Cormorant Garamond', serif;
     line-height: 150%;
   }
   body main .container2 {
@@ -746,12 +738,9 @@ footer p {
     font-size: 16px;
     padding: 16px 32px;
   }
-  body main .arla {
-    font-family: 'Cormorant Garamond', serif;
-  }
   body main .arla .h2 {
     float: left;
-    margin-left: -153%;
+    margin-left: -157%;
     margin-top: -1%;
     font-size: 23px;
   }
@@ -807,7 +796,6 @@ footer p {
     float: right;
     margin-right: 40%;
     margin-top: -89%;
-    font-family: 'Cormorant Garamond', serif;
     line-height: 150%;
   }
   body main .p3 {
@@ -816,7 +804,6 @@ footer p {
     margin-right: 5%;
     margin-left: 18%;
     margin-top: -79%;
-    font-family: 'Cormorant Garamond', serif;
     line-height: 150%;
   }
 
