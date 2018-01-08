@@ -11,19 +11,24 @@
 }
 
 img {
-
 width: 100%;
 height: auto;
 }
 
-/*.iphone/ipad*/
+/*iphone/ipad*/
 header {
   position: fixed;
   width: 100%;
 
-  body {
-    background-color: red;
+  .logo {
+  width: 6%;
+  margin-left: 4%;
+  margin-top:2%;
+  height: auto;
+  z-index: -2
   }
+
+  body {
 
     img {
   height: auto;
@@ -35,10 +40,11 @@ header {
   display: none;
 }
 
-  label{
- @include icon(transparent);
-color:gray;
-margin-left: 88%;
+label{
+@include icon(transparent); /*selve burger ikonet*/
+float:right;
+margin-right: -1.4%;
+color:gray; /*farven på burger ikonet*/
 }
 
 input{
@@ -87,6 +93,7 @@ left:0px;
 * {
   box-sizing:border-box}
 
+/* Start mobilversion forside */
 .slideshow-container {
   max-width: 1000px;
   margin: auto;
@@ -136,7 +143,7 @@ left:0px;
 }
 
   h1 {
-    /*background-image: url('../img/background9.png');*/
+    background-image: url('../img/background9.png');
     padding: 20px 20px;
     text-align: center;
     font-style: italic;
@@ -152,63 +159,107 @@ left:0px;
     width: 100%;
   }
 
-footer {
-  height: 150px;
-  width: 100%;
-  margin-top: -1%;
-  background-color: grey;
-  background-image: url('../img/background2.png');
-  background-attachment: fixed;
-  background-size: cover;
-  bottom:0;
-  left:0;
-  right:0;
 
-
-a {
-  float: right;
-  margin-right: 8%;
-
-
-
-    i {
-      margin-top: 30%;
-
-&.fa-facebook-square {
-  height: auto;
-  font-size: 40px;
-  color: white;
-  margin-top: 125%;
- }
-}
-}
-
-section {
-  float: left;
-  margin-left: 49%;
-  margin-top: -12%;
-
-
-  li {
-   font-size: 12px;
-   list-style: none;
-   margin-left: -120%;
-   color: black;
-   font-family: 'Cormorant Garamond', serif;;
+/* Start mobilversion atelier 1B */
+  body {
+    background-image: url('../img/background9.png');
   }
- }
 
-p {
-  font-size: 10px;
-  color: black;
-  font-family: 'Cormorant Garamond', serif;;
-  font-weight: bold;
-  margin-top: 8%;
-  margin-right: 32%;
-  float: right;
-  color: black;
- }
+  .atelierdiv {
+  position: relative;
+  display: block;
+  z-index: -2;
+  padding-top: 13%;
+
+      .atelierbilledediv {
+        width: 375px;
+        height: auto;
+        z-index: -2;
+    }
+
+
+            p {
+              background-color: rgba(255,255,255, 0.6);
+              padding: 40px 10px;
+              text-align: center;
+              font-size: 13px;
+              vertical-align: middle;
+              font-family: 'Cormorant Garamond', serif;;
+              position: absolute;
+              width: 80%;
+              margin-top: -59%;
+              margin-left: 10%;
+  }
 }
+
+
+
+    h3, {
+      background-color: rgba(0,0,0,0.1);
+      padding: 35px 20px;
+      text-align: center;
+      font-size: 12px;
+      vertical-align: middle;
+      font-weight: bold;
+      margin-top: -1.2%;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+    }
+
+
+/* Start footer */
+    .footer, .footerfrontpage {
+      height: 150px;
+      width: 100%;
+      background-color: rgba(0,0,0,0.4);
+      background-image: url('../img/background2.png');
+      position: absolute;
+      margin-top: -1.2%;
+
+
+      a {
+        float: right;
+        margin-top: 13%;
+        margin-right: 7%;
+
+
+
+          i {
+
+      &.fa-facebook-square {
+        height: auto;
+        font-size: 40px;
+        color: white;
+        }
+     }
+    }
+
+              section {
+                float: left;
+                margin-left: 7%;
+                margin-top: 10%;
+
+
+
+                li {
+                  font-size: 12px;
+                  list-style: none;
+                  color: black;
+                  font-family: 'Cormorant Garamond', serif;;
+              }
+             }
+
+      p {
+        font-size: 10px;
+        color: black;
+        font-family: 'Cormorant Garamond', serif;;
+        font-weight: bold;
+        margin-top: 9%;
+        margin-right: 32%;
+        float: right;
+        color: black;
+       }
+      }
 
   @media screen and (max-width: 992px) {
     .image, .image2, .image3 {
@@ -232,10 +283,11 @@ p {
 
   .fa-bars {
     font-size: 30px;
-    margin-left: 70%;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-left: -70%;
 }
 
+/* Start forside ipad */
 #dots{
   position: absolute;
   top: 128%;
@@ -274,13 +326,58 @@ p {
   to {opacity: 1}
 }
 
-h1 {
-  font-size: 25px;
-  padding-top: 10%;
-  padding-bottom: 10%;
+h3 {
+  font-size: 22px;
+  margin-top: -1%;
+  padding-bottom: 8%;
+  padding-top: 8%;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Cormorant Garamond', serif;;
+  font-weight: bold;
 }
 
-footer {
+/* Start atelier 1b ipad */
+.atelierdiv {
+position: relative;
+display: block;
+z-index: -2;
+padding-top: 11%;
+
+    .atelierbilledediv {
+      width: 100%;
+      height: auto;
+      z-index: -2;
+  }
+
+
+          p {
+            background-color: rgba(255,255,255, 0.6);
+            padding: 70px 50px;
+            text-align: center;
+            font-size: 23px;
+            vertical-align: middle;
+            font-family: 'Cormorant Garamond', serif;;
+            position: absolute;
+            width: 80%;
+            margin-top: -56%;
+            margin-left: 10%;
+            line-height: 35px;
+
+}
+}
+
+ .atelierbillede2 {
+   width: 100%;
+ }
+
+   .atelierbillede3 {
+     width: 100%;
+   }
+
+/* Start footer */
+.footer, .footerfrontpage {
   height: 280px;
 
 a {
@@ -290,14 +387,13 @@ i {
 
   &.fa-facebook-square {
   font-size: 75px;
-  margin-top: 150%;
+  }
+ }
+}
 
-}
-}
-}
   section {
     float: left;
-    margin-left: 45%;
+    margin-right: 2%;
     margin-top: 10%;
 
     li {
@@ -336,6 +432,10 @@ i {
 display: block;
 }
 
+.logo {
+  display: none;
+}
+
   input, label {
 display: none;
 }
@@ -355,7 +455,7 @@ display: block;
 img {
   width: 10%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .fp {
@@ -364,7 +464,7 @@ img {
 }
 
 
-  li{
+  li {
     float: right;
     display: block;
     margin-right: 75px;
@@ -437,17 +537,18 @@ img {
             display: none;
           }
 
+/* Start forside desktop */
 .frontpagebig {
 width: 100%;
 margin-bottom: -2%;
 margin-top: -0.1%;
 
 }
-    h1 {
+    h3 {
       font-size: 21px;
       padding-top: 8%;
       padding-bottom: 5%;
-      font-family: 'Dosis', sans-serif;
+      font-family: 'Cormorant Garamond', serif;;
       background-color: #F1F2FF;
       font-style: normal;
     }
@@ -476,16 +577,16 @@ z-index: -2;
   }
 
           h2 {
-            background-color: rgba(255,255,255, 0.5);
-            padding: 70px 20px;
+            background-color: rgba(255,255,255, 0.7);
+            padding: 70px 40px;
             text-align: center;
             font-style: italic;
             font-size: 20px;
             vertical-align: middle;
-            font-weight: lighter;
-            font-family: 'Dosis', sans-serif;
+            font-family: 'Cormorant Garamond', serif;;
             position: absolute;
-            margin-top: -103%;
+            margin-top: -59%;
+            font-weight: normal;
  }
 }
 
@@ -504,16 +605,16 @@ z-index: -2;
            }
 
                     h2 {
-                     background-color: rgba(255,255,255, 0.5);
-                     padding: 70px 20px;
+                     background-color: rgba(255,255,255, 0.7);
+                     padding: 70px 40px;
                      text-align: center;
                      font-style: italic;
                      font-size: 20px;
                      vertical-align: middle;
-                     font-weight: lighter;
-                     font-family: 'Dosis', sans-serif;
+                     font-family: 'Cormorant Garamond', serif;;
                      position: absolute;
-                     margin-top: -103%;
+                     margin-top: -59%;
+                     font-weight: normal;
  }
 }
 
@@ -532,16 +633,17 @@ z-index: -2;
          }
 
          h2 {
-          background-color: rgba(255,255,255, 0.5);
-          padding: 70px 45px;
+          background-color: rgba(255,255,255, 0.7);
+          padding: 70px 40px;
           text-align: center;
           font-style: italic;
           font-size: 20px;
           vertical-align: middle;
           font-weight: lighter;
-          font-family: 'Dosis', sans-serif;
+          font-family: 'Cormorant Garamond', serif;;
           position: absolute;
-          margin-top: -103%;
+          margin-top: -59%;
+          font-weight: normal;
    }
   }
  }
@@ -554,7 +656,72 @@ z-index: -2;
   height: 80px;
 }
 
-footer {
+/* Atelier 1b desktop */
+
+body {
+  background-image: url('../img/background9.png');
+}
+
+.atelierdiv {
+position: relative;
+display: block;
+z-index: -2;
+padding-top: 0%;
+
+    .atelierbilledediv {
+      width: 100%;
+      height: auto;
+      z-index: -2;
+      margin-bottom: -2%;
+  }
+
+
+          p {
+            background-color: rgba(255,255,255, 0.6);
+            padding: 150px 80px;
+            text-align: center;
+            font-size: 23px;
+            vertical-align: middle;
+            font-family: 'Cormorant Garamond', serif;;
+            position: absolute;
+            width: 45%;
+            margin-top: -54%;
+            margin-left: 10%;
+            line-height: 35px;
+            margin-left: 50%;
+
+}
+}
+
+
+  h3 {
+    font-size: 23px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 1.5%;
+    font-family: 'Cormorant Garamond', serif;;
+    background-image: url('../img/background2.png');
+    background-size: cover;
+
+
+}
+
+.atelierbillede2 {
+  height: auto;
+  width: 50%;
+  float: left;
+}
+
+.atelierbillede3 {
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+/* footer forside*/
+.footerfrontpage {
    background-color: rgba(0,0,0,0.5);
    background-image: url('../img/hihi.jpeg');
    background-attachment: fixed;
@@ -562,14 +729,17 @@ footer {
    bottom:0;
    left:0;
    right:0;
+   top:184%;
    height: 325px;
    width: 100%;
-   margin-top: -4.2%;
+   position: absolute;
+
+
 
    a {
      float: left;
-     margin-left: 14.5%;
-     margin-top: 4.5%;
+     margin-left: 11.5%;
+     margin-top: 6%;
      margin-bottom: -1%;
 
             i {
@@ -584,9 +754,9 @@ footer {
 
           section {
             color: white;
-            margin-top: 12%;
-            margin-left: 16.5%;
+            margin-left: 2%;
             display: block;
+            margin-top: 11.5%;
 
 
             li {
@@ -595,8 +765,7 @@ footer {
               font-family: 'Cormorant Garamond', serif;;
               color: white;
               text-align: center;
-              padding-right: 100px;
-              margin-right: 400px;
+              margin-left: -127%;
           }
 
 h5 {
@@ -613,11 +782,11 @@ h5 {
 }
 
 form {
-    margin-top: -30%;
-    margin-left: -10%;
+    margin-top: -25%;
+    margin-left: 16%;
 
             .søgefelt1 {
-              width: 750px;
+              width: 780px;
               height: 25px;
       }
     }
@@ -630,4 +799,59 @@ form {
             color: white;
           }
         }
-      }
+
+
+
+/*Footer atelier 1b*/
+
+.footer {
+  background-color: rgba(0,0,0,0.5);
+  background-image: url('../img/hihi.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 325px;
+  width: 100%;
+  margin-top: 29.5%;
+  position: inherit;
+
+  a {
+    float: right;
+    margin-left: 40%;
+    margin-top: 10%;
+    font-size: 50px;
+
+    i {
+
+        &.fa-facebook-square {
+           margin-top: 2%;
+    }
+   }
+  }
+
+  section {
+    color: white;
+    margin-left: 6%;
+    display: block;
+    margin-top: 9%;
+
+
+    li {
+      font-size: 25px;
+      list-style: none;
+      font-family: 'Cormorant Garamond', serif;;
+      color: white;
+      text-align: left;
+  }
+}
+
+p {
+  margin-right: 45%;
+  margin-top: 7.7%;
+  font-size: 16px;
+  color: white;
+  }
+ }
+}
