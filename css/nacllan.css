@@ -9,7 +9,7 @@
 }
 
 img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -323,7 +323,7 @@ p {
 
 
 body {
-background-color:red;
+
 }
 
 .fa-bars {
@@ -373,7 +373,7 @@ footer p {
 @media screen and (min-width: 992px) {
   /*Alt det her er på desktop versionen, hvor min menubar vises. Den er færdiglavet*/
 body {
-  background-color: green;
+
 }
 
 
@@ -606,7 +606,6 @@ font-size: 30px;
     right: 0;
     height: 325px;
     width: 100%;
-    margin-top: 29.5%;
     position: inherit;
   }
   footer a {
