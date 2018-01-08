@@ -18,6 +18,9 @@ header {
   position: fixed;
   width: 100%;
 }
+header body {
+  background-color: red;
+}
 header body img {
   height: auto;
   width: 100%;
