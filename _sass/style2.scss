@@ -165,64 +165,50 @@ left:0px;
     background-image: url('../img/background9.png');
   }
 
-  article {
-    width: 100%;
-    clear: both;
-    padding-bottom: 1%;
+  .atelierdiv {
+  position: relative;
+  display: block;
+  z-index: -2;
+  padding-top: 13%;
 
-        h2 {
-          font-family: 'Alegreya Sans', sans-serif;
-          font-weight: bolder;
-          font-size: 19px;
-          text-align: center;
-          padding-top: 14%;
-          margin-bottom: -13%;
-        }
-
-      hr {
-       width: 14%;
-       margin-bottom: 8%;
-       border-color: #F1F2FF;
-       border-style: ridge;
-       border-width: 1px;
-       margin-left: 42%;
-     }
-
-     p {
-       font-family: 'Cormorant Garamond', serif;
-       font-weight: lighter;
-       line-height: 23px;
-       font-size: 14px;
-       margin-left: 7%;
-       margin-right: 7%;
-       margin-bottom: 4%;
-       float: left;
-       text-align: left;
-     }
-
-  .atelierbillede{
-    width: 300px;
-    height: auto;
-    margin-top: 3%;
-    padding-bottom: 20%;
+      .atelierbilledediv {
+        width: 375px;
+        height: auto;
+        z-index: -2;
     }
-  }
 
-    h3 {
+
+            p {
+              background-color: rgba(255,255,255, 0.6);
+              padding: 40px 10px;
+              text-align: center;
+              font-size: 13px;
+              vertical-align: middle;
+              font-family: 'Cormorant Garamond', serif;;
+              position: absolute;
+              width: 80%;
+              margin-top: -59%;
+              margin-left: 10%;
+  }
+}
+
+
+
+    h3, {
       background-color: rgba(0,0,0,0.1);
       padding: 35px 20px;
       text-align: center;
-      font-style: italic;
       font-size: 12px;
       vertical-align: middle;
-      font-weight: lighter;
+      font-weight: bold;
       margin-top: -1.2%;
-      font-family: 'Cormorant Garamond', serif;;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
     }
 
 
 /* Start footer */
-    footer {
+    .footer, .footerfrontpage {
       height: 150px;
       width: 100%;
       background-color: rgba(0,0,0,0.4);
@@ -297,8 +283,8 @@ left:0px;
 
   .fa-bars {
     font-size: 30px;
-    margin-left: 70%;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-left: -70%;
 }
 
 /* Start forside ipad */
@@ -341,42 +327,46 @@ left:0px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 22px;
   margin-top: -1%;
   padding-bottom: 8%;
   padding-top: 8%;
   padding-left: 7%;
   padding-right: 7%;
+  font-family: 'Raleway', sans-serif;
   font-family: 'Cormorant Garamond', serif;;
+  font-weight: bold;
 }
 
-/* Start atelier 1b */
+/* Start atelier 1b ipad */
+.atelierdiv {
+position: relative;
+display: block;
+z-index: -2;
+padding-top: 11%;
 
-article {
-  width: 100%;
-
-  h2 {
-    font-size: 40px;
+    .atelierbilledediv {
+      width: 100%;
+      height: auto;
+      z-index: -2;
   }
 
-    p {
-      font-size: 30px;
-      line-height: 45px;
-      margin-left: 8%;
-      margin-right: 8%;
-    }
 
-    .atelierbillede {
-      height: 600px;
-      width: auto;
-    }
-  }
+          p {
+            background-color: rgba(255,255,255, 0.6);
+            padding: 70px 50px;
+            text-align: center;
+            font-size: 23px;
+            vertical-align: middle;
+            font-family: 'Cormorant Garamond', serif;;
+            position: absolute;
+            width: 80%;
+            margin-top: -56%;
+            margin-left: 10%;
+            line-height: 35px;
 
-  h1 {
-    font-size: 25px;
-    padding: 40px 70px;
-  }
-
+}
+}
 
  .atelierbillede2 {
    width: 100%;
@@ -387,7 +377,7 @@ article {
    }
 
 /* Start footer */
-footer {
+.footer, .footerfrontpage {
   height: 280px;
 
 a {
@@ -465,7 +455,7 @@ display: block;
 img {
   width: 10%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .fp {
@@ -587,16 +577,16 @@ z-index: -2;
   }
 
           h2 {
-            background-color: rgba(255,255,255, 0.5);
-            padding: 70px 20px;
+            background-color: rgba(255,255,255, 0.7);
+            padding: 70px 40px;
             text-align: center;
             font-style: italic;
             font-size: 20px;
             vertical-align: middle;
-            font-weight: lighter;
-            font-family: 'Dosis', sans-serif;
+            font-family: 'Cormorant Garamond', serif;;
             position: absolute;
-            margin-top: -50%;
+            margin-top: -59%;
+            font-weight: normal;
  }
 }
 
@@ -615,16 +605,16 @@ z-index: -2;
            }
 
                     h2 {
-                     background-color: rgba(255,255,255, 0.5);
-                     padding: 70px 20px;
+                     background-color: rgba(255,255,255, 0.7);
+                     padding: 70px 40px;
                      text-align: center;
                      font-style: italic;
                      font-size: 20px;
                      vertical-align: middle;
-                     font-weight: lighter;
-                     font-family: 'Dosis', sans-serif;
+                     font-family: 'Cormorant Garamond', serif;;
                      position: absolute;
-                     margin-top: -50%;
+                     margin-top: -59%;
+                     font-weight: normal;
  }
 }
 
@@ -643,16 +633,17 @@ z-index: -2;
          }
 
          h2 {
-          background-color: rgba(255,255,255, 0.5);
-          padding: 70px 45px;
+          background-color: rgba(255,255,255, 0.7);
+          padding: 70px 40px;
           text-align: center;
           font-style: italic;
           font-size: 20px;
           vertical-align: middle;
           font-weight: lighter;
-          font-family: 'Dosis', sans-serif;
+          font-family: 'Cormorant Garamond', serif;;
           position: absolute;
-          margin-top: -50%;
+          margin-top: -59%;
+          font-weight: normal;
    }
   }
  }
@@ -671,40 +662,40 @@ body {
   background-image: url('../img/background9.png');
 }
 
-article {
-  width: 100%;
+.atelierdiv {
+position: relative;
+display: block;
+z-index: -2;
+padding-top: 0%;
 
-  h2 {
-    font-size: 25px;
-    font-family: 'Cormorant Garamond', serif;;
+    .atelierbilledediv {
+      width: 100%;
+      height: auto;
+      z-index: -2;
+      margin-bottom: -2%;
   }
 
-  hr {
-    width: 75px;
-    margin-left: 47%;
-  }
 
-  p {
-    font-size: 20px;
-    margin-top: -5%;
-    width: 37%;
-    line-height: 50px;
-    margin-left: 12%;
-    line-height: 40px;
-  }
+          p {
+            background-color: rgba(255,255,255, 0.6);
+            padding: 150px 80px;
+            text-align: center;
+            font-size: 23px;
+            vertical-align: middle;
+            font-family: 'Cormorant Garamond', serif;;
+            position: absolute;
+            width: 45%;
+            margin-top: -54%;
+            margin-left: 10%;
+            line-height: 35px;
+            margin-left: 50%;
 
-  .atelierbillede {
-    width: 35%;
-    height: 35%;
-    margin-top: -4%;
-    margin-right: 8%;
-
-  }
+}
 }
 
 
   h3 {
-    font-size: 25px;
+    font-size: 23px;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 7%;
@@ -730,8 +721,6 @@ article {
 }
 
 /* footer forside*/
-
-
 .footerfrontpage {
    background-color: rgba(0,0,0,0.5);
    background-image: url('../img/hihi.jpeg');
@@ -749,8 +738,8 @@ article {
 
    a {
      float: left;
-     margin-left: 12.5%;
-     margin-top: 4.5%;
+     margin-left: 11.5%;
+     margin-top: 6%;
      margin-bottom: -1%;
 
             i {
@@ -767,6 +756,7 @@ article {
             color: white;
             margin-left: 2%;
             display: block;
+            margin-top: 11.5%;
 
 
             li {
@@ -775,7 +765,7 @@ article {
               font-family: 'Cormorant Garamond', serif;;
               color: white;
               text-align: center;
-              margin-left: -130%;
+              margin-left: -127%;
           }
 
 h5 {
@@ -842,26 +832,26 @@ form {
   }
 
   section {
-  color: white;
-  margin-top: -6.5%;
-
-
-  li {
-    font-size: 23px;
-    list-style: none;
-    font-family: 'Cormorant Garamond', serif;;
     color: white;
-    text-align: left;
-    padding-right: 100px;
-    margin-right: 75px;
-  }
-  }
+    margin-left: 6%;
+    display: block;
+    margin-top: 9%;
 
-  p {
-  margin-right: 43%;
-  margin-top: 4%;
-  font-size: 17px;
+
+    li {
+      font-size: 25px;
+      list-style: none;
+      font-family: 'Cormorant Garamond', serif;;
+      color: white;
+      text-align: left;
+  }
+}
+
+p {
+  margin-right: 45%;
+  margin-top: 7.7%;
+  font-size: 16px;
   color: white;
   }
-  }
-  }
+ }
+}

@@ -165,59 +165,44 @@ body {
   background-image: url("../img/background9.png");
 }
 
-article {
-  width: 100%;
-  clear: both;
-  padding-bottom: 1%;
+.atelierdiv {
+  position: relative;
+  display: block;
+  z-index: -2;
+  padding-top: 13%;
 }
-article h2 {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: bolder;
-  font-size: 19px;
-  text-align: center;
-  padding-top: 14%;
-  margin-bottom: -13%;
-}
-article hr {
-  width: 14%;
-  margin-bottom: 8%;
-  border-color: #F1F2FF;
-  border-style: ridge;
-  border-width: 1px;
-  margin-left: 42%;
-}
-article p {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: lighter;
-  line-height: 23px;
-  font-size: 14px;
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-bottom: 4%;
-  float: left;
-  text-align: left;
-}
-article .atelierbillede {
-  width: 300px;
+.atelierdiv .atelierbilledediv {
+  width: 375px;
   height: auto;
-  margin-top: 3%;
-  padding-bottom: 20%;
+  z-index: -2;
+}
+.atelierdiv p {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 40px 10px;
+  text-align: center;
+  font-size: 13px;
+  vertical-align: middle;
+  font-family: 'Cormorant Garamond', serif;
+  position: absolute;
+  width: 80%;
+  margin-top: -59%;
+  margin-left: 10%;
 }
 
 h3 {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 35px 20px;
   text-align: center;
-  font-style: italic;
   font-size: 12px;
   vertical-align: middle;
-  font-weight: lighter;
+  font-weight: bold;
   margin-top: -1.2%;
   font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
 }
 
 /* Start footer */
-footer {
+.footer, .footerfrontpage {
   height: 150px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -225,28 +210,28 @@ footer {
   position: absolute;
   margin-top: -1.2%;
 }
-footer a {
+.footer a, .footerfrontpage a {
   float: right;
   margin-top: 13%;
   margin-right: 7%;
 }
-footer a i.fa-facebook-square {
+.footer a i.fa-facebook-square, .footerfrontpage a i.fa-facebook-square {
   height: auto;
   font-size: 40px;
   color: white;
 }
-footer section {
+.footer section, .footerfrontpage section {
   float: left;
   margin-left: 7%;
   margin-top: 10%;
 }
-footer section li {
+.footer section li, .footerfrontpage section li {
   font-size: 12px;
   list-style: none;
   color: black;
   font-family: 'Cormorant Garamond', serif;
 }
-footer p {
+.footer p, .footerfrontpage p {
   font-size: 10px;
   color: black;
   font-family: 'Cormorant Garamond', serif;
@@ -277,8 +262,8 @@ footer p {
 @media screen and (min-width: 768px) {
   .fa-bars {
     font-size: 30px;
-    margin-left: 70%;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-left: -70%;
   }
 
   /* Start forside ipad */
@@ -328,36 +313,41 @@ footer p {
     }
   }
   h3 {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: -1%;
     padding-bottom: 8%;
     padding-top: 8%;
     padding-left: 7%;
     padding-right: 7%;
+    font-family: 'Raleway', sans-serif;
     font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
   }
 
-  /* Start atelier 1b */
-  article {
+  /* Start atelier 1b ipad */
+  .atelierdiv {
+    position: relative;
+    display: block;
+    z-index: -2;
+    padding-top: 11%;
+  }
+  .atelierdiv .atelierbilledediv {
     width: 100%;
+    height: auto;
+    z-index: -2;
   }
-  article h2 {
-    font-size: 40px;
-  }
-  article p {
-    font-size: 30px;
-    line-height: 45px;
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-  article .atelierbillede {
-    height: 600px;
-    width: auto;
-  }
-
-  h1 {
-    font-size: 25px;
-    padding: 40px 70px;
+  .atelierdiv p {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 70px 50px;
+    text-align: center;
+    font-size: 23px;
+    vertical-align: middle;
+    font-family: 'Cormorant Garamond', serif;
+    position: absolute;
+    width: 80%;
+    margin-top: -56%;
+    margin-left: 10%;
+    line-height: 35px;
   }
 
   .atelierbillede2 {
@@ -369,27 +359,27 @@ footer p {
   }
 
   /* Start footer */
-  footer {
+  .footer, .footerfrontpage {
     height: 280px;
   }
-  footer a i {
+  .footer a i, .footerfrontpage a i {
     margin-right: -6%;
   }
-  footer a i.fa-facebook-square {
+  .footer a i.fa-facebook-square, .footerfrontpage a i.fa-facebook-square {
     font-size: 75px;
   }
-  footer section {
+  .footer section, .footerfrontpage section {
     float: left;
     margin-right: 2%;
     margin-top: 10%;
   }
-  footer section li {
+  .footer section li, .footerfrontpage section li {
     font-size: 23px;
     list-style: none;
     color: black;
     font-family: 'Cormorant Garamond', serif;
   }
-  footer p {
+  .footer p, .footerfrontpage p {
     font-size: 18px;
     color: black;
     font-family: 'Cormorant Garamond', serif;
@@ -430,7 +420,7 @@ footer p {
   header ul img {
     width: 10%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   header ul .fp {
     float: left;
@@ -527,16 +517,16 @@ footer p {
     z-index: -2;
   }
   section .image h2 {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 70px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 70px 40px;
     text-align: center;
     font-style: italic;
     font-size: 20px;
     vertical-align: middle;
-    font-weight: lighter;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     position: absolute;
-    margin-top: -50%;
+    margin-top: -59%;
+    font-weight: normal;
   }
   section .image2 {
     position: relative;
@@ -552,16 +542,16 @@ footer p {
     z-index: -2;
   }
   section .image2 h2 {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 70px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 70px 40px;
     text-align: center;
     font-style: italic;
     font-size: 20px;
     vertical-align: middle;
-    font-weight: lighter;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     position: absolute;
-    margin-top: -50%;
+    margin-top: -59%;
+    font-weight: normal;
   }
   section .image3 {
     position: relative;
@@ -577,16 +567,17 @@ footer p {
     z-index: -2;
   }
   section .image3 h2 {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 70px 45px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 70px 40px;
     text-align: center;
     font-style: italic;
     font-size: 20px;
     vertical-align: middle;
     font-weight: lighter;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     position: absolute;
-    margin-top: -50%;
+    margin-top: -59%;
+    font-weight: normal;
   }
 
   .box {
@@ -602,34 +593,35 @@ footer p {
     background-image: url("../img/background9.png");
   }
 
-  article {
+  .atelierdiv {
+    position: relative;
+    display: block;
+    z-index: -2;
+    padding-top: 0%;
+  }
+  .atelierdiv .atelierbilledediv {
     width: 100%;
+    height: auto;
+    z-index: -2;
+    margin-bottom: -2%;
   }
-  article h2 {
-    font-size: 25px;
+  .atelierdiv p {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 150px 80px;
+    text-align: center;
+    font-size: 23px;
+    vertical-align: middle;
     font-family: 'Cormorant Garamond', serif;
-  }
-  article hr {
-    width: 75px;
-    margin-left: 47%;
-  }
-  article p {
-    font-size: 20px;
-    margin-top: -5%;
-    width: 37%;
-    line-height: 50px;
-    margin-left: 12%;
-    line-height: 40px;
-  }
-  article .atelierbillede {
-    width: 35%;
-    height: 35%;
-    margin-top: -4%;
-    margin-right: 8%;
+    position: absolute;
+    width: 45%;
+    margin-top: -54%;
+    margin-left: 10%;
+    line-height: 35px;
+    margin-left: 50%;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 23px;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 7%;
@@ -668,8 +660,8 @@ footer p {
   }
   .footerfrontpage a {
     float: left;
-    margin-left: 12.5%;
-    margin-top: 4.5%;
+    margin-left: 11.5%;
+    margin-top: 6%;
     margin-bottom: -1%;
   }
   .footerfrontpage a i.fa-facebook-square {
@@ -681,6 +673,7 @@ footer p {
     color: white;
     margin-left: 2%;
     display: block;
+    margin-top: 11.5%;
   }
   .footerfrontpage section li {
     font-size: 22px;
@@ -688,7 +681,7 @@ footer p {
     font-family: 'Cormorant Garamond', serif;
     color: white;
     text-align: center;
-    margin-left: -130%;
+    margin-left: -127%;
   }
   .footerfrontpage section h5 {
     font-family: 'Alegreya Sans', sans-serif;
@@ -741,21 +734,21 @@ footer p {
   }
   .footer section {
     color: white;
-    margin-top: -6.5%;
+    margin-left: 6%;
+    display: block;
+    margin-top: 9%;
   }
   .footer section li {
-    font-size: 23px;
+    font-size: 25px;
     list-style: none;
     font-family: 'Cormorant Garamond', serif;
     color: white;
     text-align: left;
-    padding-right: 100px;
-    margin-right: 75px;
   }
   .footer p {
-    margin-right: 43%;
-    margin-top: 4%;
-    font-size: 17px;
+    margin-right: 45%;
+    margin-top: 7.7%;
+    font-size: 16px;
     color: white;
   }
 }
